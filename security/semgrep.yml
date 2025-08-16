@@ -1,0 +1,7 @@
+# SecureShip-CI local Semgrep config
+# Run with: semgrep --config security/semgrep.yml
+rules:
+  - id: import-registry-owasp
+    pattern-either: []
+    message: "Registry OWASP Top 10 imported via workflow. (stub rule)"
+    severity: INFO
