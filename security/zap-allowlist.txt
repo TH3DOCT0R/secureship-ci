@@ -1,0 +1,4 @@
+# One pattern per line to ignore specific ZAP alert strings/URLs
+# Example:
+# 10054 Ignore X-Frame-Options warning on known legacy endpoint
+# https://staging.example.com/legacy/*
