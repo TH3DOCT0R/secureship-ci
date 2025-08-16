@@ -1,0 +1,19 @@
+title = "SecureShip-CI Gitleaks Config"
+
+[allowlist]
+description = "Ignore common test/fixture patterns and non-secret strings"
+paths = [
+  '''^docs/''',
+  '''^examples/''',
+  '''^tests?/fixtures?/''',
+  '''^node_modules/''',
+  '''^vendor/'''
+]
+# Common false-positive patterns (add your internal ones here)
+regexes = [
+  '''(?i)example(api|token|key|secret)''',
+  '''(?i)dummy(value|password)''',
+  '''(?i)changeme'''
+]
+
+# Uncomment rules to fine-tune later; defaults catch most high-signal patterns.
